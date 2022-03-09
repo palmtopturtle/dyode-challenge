@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/dyode-challenge/static/css/main.073c9b0a.css",
-    "main.js": "/dyode-challenge/static/js/main.687a5aa1.js",
+    "main.css": "/dyode-challenge/static/css/main.8f07a47e.css",
+    "main.js": "/dyode-challenge/static/js/main.a73ffe3d.js",
     "static/js/787.ba9d9643.chunk.js": "/dyode-challenge/static/js/787.ba9d9643.chunk.js",
-    "static/media/logo.svg": "/dyode-challenge/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/hero4.png": "/dyode-challenge/static/media/hero4.68082b59d7c3a316a6e0.png",
+    "static/media/hero1.png": "/dyode-challenge/static/media/hero1.be6172737c5a48703055.png",
+    "static/media/hero2.png": "/dyode-challenge/static/media/hero2.df2373f8f816e4b91883.png",
+    "static/media/hero3.png": "/dyode-challenge/static/media/hero3.7ccb0108f8b05190ee89.png",
+    "static/media/accessories.png": "/dyode-challenge/static/media/accessories.a754370f490b36768aa8.png",
+    "static/media/womens.png": "/dyode-challenge/static/media/womens.5c8671355c54a0554572.png",
+    "static/media/mens.png": "/dyode-challenge/static/media/mens.06ac6595ccc3acdd1e83.png",
+    "static/media/product.png": "/dyode-challenge/static/media/product.ce2a5e2ecd5ef9434955.png",
     "index.html": "/dyode-challenge/index.html",
-    "main.073c9b0a.css.map": "/dyode-challenge/static/css/main.073c9b0a.css.map",
-    "main.687a5aa1.js.map": "/dyode-challenge/static/js/main.687a5aa1.js.map",
+    "main.8f07a47e.css.map": "/dyode-challenge/static/css/main.8f07a47e.css.map",
+    "main.a73ffe3d.js.map": "/dyode-challenge/static/js/main.a73ffe3d.js.map",
     "787.ba9d9643.chunk.js.map": "/dyode-challenge/static/js/787.ba9d9643.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.687a5aa1.js"
+    "static/css/main.8f07a47e.css",
+    "static/js/main.a73ffe3d.js"
   ]
 }
