@@ -1,0 +1,32 @@
+.accordion {
+    overflow: hidden;
+    width: 100%;
+    $this: &;
+
+    &__button {
+        width: 100%;
+        padding: 0;
+        margin: 8px 0;
+        border: none;
+        background-color: transparent;
+        color: $color-white;
+        text-align: left;
+        font-family: $font-stlyish;
+        @include font-size(22);
+
+        &::after {
+            content: "+";
+            font-family: $font-primary;
+            float: right;
+
+            #{$this}.open & {
+                content: "-";
+            }
+        }
+    }
+
+    &__content {
+        transition: max-height 0.3s ease-in-out;
+        overflow: hidden;
+    }
+}

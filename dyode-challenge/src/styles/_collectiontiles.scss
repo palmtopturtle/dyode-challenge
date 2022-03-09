@@ -1,0 +1,64 @@
+.collection-tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 15px;
+
+    @include tablet-up {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include desktop-up {
+        padding: 38px;
+    }
+
+    &--tile {
+        position: relative;
+        margin: 5px;
+
+        &:last-child {
+            grid-column: span 2;
+        }
+
+        @include tablet-up {
+            &:last-child {
+                grid-column: span 1;
+            }
+        }
+
+        @include desktop-up {
+            margin: 10px;
+        }
+
+        &__image {
+            width: 100%;
+            height: 225px;
+            object-fit: cover;
+            object-position: center;
+
+            @include tablet-up {
+                height: auto;
+            }
+        }
+
+        &__text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: $color-primary;
+            color: $color-white;
+            text-align: center;
+
+            > .h3 {
+                margin: 0;
+                padding: 10px 0;
+
+                @include desktop-up {
+                    padding: 21px 0;
+                }
+            }
+        }
+    }
+}

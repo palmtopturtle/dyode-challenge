@@ -1,0 +1,87 @@
+.newsletter-signup {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color-white;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 14px;
+    padding-bottom: 20px;
+
+    @include desktop-up {
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 58px;
+        padding-bottom: 102px;
+    
+    }
+
+    &--container {
+        width: 100%;
+        background-color: $color-primary;
+    }
+
+    &__heading {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        @include font-size(20);
+
+        @include desktop-up {
+            @include font-size(40)
+        }
+
+        &--icon {
+            vertical-align: middle;
+            margin-bottom: pxToRem(8);
+
+            @include desktop-up {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    &--subscribe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        @include desktop-up {
+            flex-direction: row;
+            text-align: left;
+        }
+ 
+        &__blurb {
+            margin-top: 0;
+            margin-bottom: 0;
+            @include font-size(14);
+            line-height: pxToRem(16);
+
+            @include desktop-up {
+                flex-basis: 50%;
+                margin-right: 22px;
+                @include font-size(22);
+                line-height: pxToRem(26);
+            }
+        }
+
+        &__input {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 8px 10px;
+            min-width: 300px;
+            border: none;
+
+            @include desktop-up {
+                @include font-size(22);
+                padding: 15px 17px;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 22px;
+                margin-right: 12px;
+                flex-grow: 1;
+            }
+        }
+    }
+}

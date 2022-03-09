@@ -1,0 +1,63 @@
+$flex-width: 124px; // centers menu for desktop
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primary;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @include desktop-up {
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 34px;
+        padding-bottom: 27px;
+    }
+
+    &--left {
+        display: flex;
+        align-items: center;
+
+        @include desktop-up {
+            width: $flex-width;
+        }
+
+        &__menu {
+            margin-right: 25px;
+        }
+
+        &__logo {
+            height: 46px;
+
+            @include desktop-up {
+                height: 77px;
+            }
+        }
+    }
+
+    &--center {
+        color: $color-white;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        @include font-size(20);
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: pxToRem(2);
+        list-style: none;
+
+        &__collection:not(:last-child) {
+            margin-right: 59px;
+        };
+    } 
+
+    &--right {
+        display: flex;
+        justify-content: space-between;
+        width: $flex-width;
+    }
+}
