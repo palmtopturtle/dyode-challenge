@@ -1,5 +1,5 @@
 # dyode-challenge
-
+```
 1. You would utilize section settings and set up an approprate schema to make the text editable in the theme editor. So, if the schema had an id of "homepage_text" with type "text", you can access it in liquid with something like {{ section.settings.homepage_text }}
  
 2. The collection banner can be easily accessed via {{ collection.image }}. Maybe something like this, with a width.
@@ -46,3 +46,4 @@
 {% endfor %}
 
 We could also use capture to store all the values in one variable.
+```
